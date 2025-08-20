@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Redesign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-airbnb"></i> airbnb
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#">Stays</a>
+                <a href="#">Experiences</a>
+                <a href="#">Online Experiences</a>
+            </nav>
+            
+            <div class="nav-buttons">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn btn-outline">Become a Host</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80" alt="Luxury Airbnb rental" class="hero-image">
+        <div class="hero-content">
+            <h1 class="animated">Find your next stay</h1>
+            <p class="animated delay-1">Search deals on hotels, homes, and much more...</p>
+            <div class="search-bar animated delay-2">
+                <input type="text" placeholder="Search destinations">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2 class="section-title">Explore Airbnb</h2>
+        <div class="category-grid">
+            <div class="category-card animated delay-1">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Beachfront" class="category-image">
+                <div class="category-info">
+                    <h3>Beachfront</h3>
+                    <p>Escape to the coast</p>
+                </div>
+            </div>
+            
+            <div class="category-card animated delay-2">
+                <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cabins" class="category-image">
+                <div class="category-info">
+                    <h3>Cabins</h3>
+                    <p>Cozy retreats in nature</p>
+                </div>
+            </div>
+            
+            <div class="category-card animated delay-3">
+                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury" class="category-image">
+                <div class="category-info">
+                    <h3>Luxury</h3>
+                    <p>High-end getaways</p>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tiny Homes" class="category-image">
+                <div class="category-info">
+                    <h3>Tiny Homes</h3>
+                    <p>Compact living spaces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section class="listings">
+        <div class="listings-container">
+            <h2 class="section-title">Live anywhere</h2>
+            <div class="listing-grid">
+                <div class="listing-card">
+                    <img src="https://images.unsplash.com/photo-1444201983204-c43cbd584d93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Apartment" class="listing-image">
+                    <div class="listing-info">
+                        <h3>Modern Apartment</h3>
+                        <div class="listing-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>New York, USA</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.92</span>
+                        </div>
+                        <div class="listing-price">$129/night</div>
+                    </div>
+                </div>
+                
+                <div class="listing-card">
+                    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Beach Villa" class="listing-image">
+                    <div class="listing-info">
+                        <h3>Beach Villa</h3>
+                        <div class="listing-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bali, Indonesia</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.97</span>
+                        </div>
+                        <div class="listing-price">$219/night</div>
+                    </div>
+                </div>
+                
+                <div class="listing-card">
+                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mountain Cabin" class="listing-image">
+                    <div class="listing-info">
+                        <h3>Mountain Cabin</h3>
+                        <div class="listing-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Aspen, USA</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.89</span>
+                        </div>
+                        <div class="listing-price">$149/night</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Host Section -->
+    <section class="host">
+        <h2>Become a Host</h2>
+        <p>Earn extra income and unlock new opportunities by sharing your space.</p>
+        <button class="btn btn-primary host-button">Learn More</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">AirCover</a></li>
+                    <li><a href="#">Safety information</a></li>
+                    <li><a href="#">Supporting people with disabilities</a></li>
+                    <li><a href="#">Cancellation options</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Airbnb.org: disaster relief housing</a></li>
+                    <li><a href="#">Combating discrimination</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Hosting</h4>
+                <ul>
+                    <li><a href="#">Airbnb your home</a></li>
+                    <li><a href="#">AirCover for Hosts</a></li>
+                    <li><a href="#">Hosting resources</a></li>
+                    <li><a href="#">Community forum</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Airbnb</h4>
+                <ul>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">New features</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2023 Airbnb, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+      
+    </script>
+</body>
+</html>
